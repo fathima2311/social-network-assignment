@@ -1,0 +1,26 @@
+Vertices=6, undirected edges=6, start=A, search target=F
+
+Adjacency matrix (row/column order A B C D E F):
+    A B C D E F 
+A : 0 1 1 0 0 0 
+B : 1 0 0 1 1 0 
+C : 1 0 0 0 0 1 
+D : 0 1 0 0 0 0 
+E : 0 1 0 0 0 1 
+F : 0 0 1 0 1 0 
+
+Adjacency list (neighbors in alphabetical order):
+A: B C
+B: A D E
+C: A F
+D: B
+E: B F
+F: C E
+
+BFS matrix: A B C D E F 
+BFS list:   A B C D E F 
+DFS matrix: A B D E F C 
+DFS list:   A B D E F C 
+
+Search F with matrix (BFS from A): FOUND; adjacency-cell checks=30
+Search F with list (BFS from A):   FOUND; neighbor-entry checks=10
